@@ -5,10 +5,30 @@
             </head>
             <body>
                 <h2>Ejemplos de formularios </h2>
-                <form action="https://www.w3schools.com/action_page.php" method="GET">
-                    Nombre: <input type="text" name="nombreusuario">
+                <!--
+                <form action="https://www.w3schools.com/action_page.php" method="GET"> -->
+                <form action="https://tecweb-acominf.c9users.io/envio.php" method="POST">
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        Nombre: <input type="text" name="Nombre-usuario">
+                        Contrasenia: <input type="password" name="Password"> 
+                        Edad: <input type="number" name="Edad">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Preferencias</legend>
+                        <h5>SISTEMA OPERATIVO</h5>
+                        Windows: <input type="checkbox" name="Windows"> 
+                        Linux: <input type="checkbox" name="LINUX">
+                        OSX: <input type="checkbox" name="OS">
+    
+                        <h5>TELEFONO</h5>
+                        Android: <input type="radio" name="aNDROID" value="1">
+                        oiOS: <input type="radio" name="oiOs" value="2">  
+                       
+                    </fieldset>
+                   ENVIAR: <input type="submit" name="Enviar" value="aceptar">
                 
                 </form>
                     
             </body>
-    </html>
+    </html> 
