@@ -1,0 +1,9 @@
+body{
+    background: #B0ADB2;
+}
+
+main {
+    width: 480px;
+    margin: auto;
+    /* border-style: solid; */
+}
