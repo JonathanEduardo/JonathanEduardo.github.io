@@ -15,3 +15,22 @@
     z-index: 10;
     background-color: green;
 }
+
+body{
+    background-color: salmon;
+}
+
+#contenedor{
+    background-color: white;
+    margin: 20px;
+    width: 400;
+}
+
+#p1, #p2 {
+    float: left;
+    width: 100
+}
+
+#p3{
+    clear: left;
+}
