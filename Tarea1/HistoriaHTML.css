@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /*background-color: #FFEB3B;*/
+}
+
+
+main {
+    /* width: 800px; */
+    height: auto;
+    background-color: rgba(255, 81, 81, 0);
+    padding: 50px;
+}
+
+header {
+    text-align: center;
+    background: black;
+    color: crimson;
+    margin: 20px;
+    padding: 20px;
+}
