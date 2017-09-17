@@ -1,5 +1,8 @@
+*{
+    font-family: cursive;
+}
 body{
-    background: #B0ADB2;
+    background: #F5F308;
 }
 
 main {
@@ -18,3 +21,21 @@ text-align: center;
 padding-top: 20px;
 /*margin-top: 20;*/
 }
+
+article {
+    padding: 15;
+    box-shadow: inset 0px 0px 20px 0px black;
+}
+
+header{
+    background-color: #b33434;
+    height: 50;
+}
+header h1{
+    text-align: center;
+}
+
+.pie-articulo{
+    color: red;
+}
+
