@@ -1,16 +1,21 @@
 *{
     margin: 0px;
     padding: 0px;
-    background-color: #000000;
-}
-table{
-    column-rule-color: green;
+    background-color: #FFEB3B;
 }
 
-div #General{
-    margin: auto;
-    width: 800px;
-    height: 500px;
-    background-color: blueviolet;
+table {
+    border-color: black;
+    background-color: #1b1b1b;
+    align-self: auto;
+    
+}
+
+
+
+main {
+    width: auto;
+    height: auto;
+    background-color: black;
 }
 
