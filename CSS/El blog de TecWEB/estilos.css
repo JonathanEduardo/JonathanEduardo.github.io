@@ -1,8 +1,9 @@
 *{
     font-family: cursive;
+    color: #ffeb3b;
 }
 body{
-    background: #F5F308;
+    background: black;
 }
 
 main {
@@ -28,8 +29,9 @@ article {
 }
 
 header{
-    background-color: #b33434;
-    height: 50;
+    background-color: #5a104f;
+    height: 75;
+    color: white;
 }
 header h1{
     text-align: center;
