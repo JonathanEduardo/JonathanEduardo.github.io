@@ -1,0 +1,17 @@
+a{
+    border-style: solid;
+    background: #000000;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+a:hover{
+
+    color: #D5EE15;
+}
+a:active{
+    color: #00D516; /*Mientras se mantenga presionado*/
+}
