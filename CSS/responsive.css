@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Reseteo de margenes y padding*/
+}
+
+img{ /*HACER IMAGEN ELASTICA QUE SE AJUSTE AL TAMAÑO DE LA PAGINA*/
+    width: 50%;
+    
+}
+
+.contenedor {
+    background-color: #aaa;
+    width: 80%;
+    margin: 0 auto;
+}
+
+main{
+    background-color: rosybrown;
+    width: 60%;
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top; /* hago que se ponga por arriba*/
+    padding: 4%;
+}
+
+aside{
+    background-color: yellow;
+    width: 40%;
+    display: inline-block; /* Para tener el main y el aside en linea alado el uno del otro*/
+    margin-right: -4px;
+    padding: 2%;
+}
