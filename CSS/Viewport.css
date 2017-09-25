@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    width: 100%;
+    background-color: royalblue;
+   /* padding: 20%;*/
+}
