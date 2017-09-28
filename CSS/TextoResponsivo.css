@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Reseteo de margenes y padding*/
+}
+
+.contenedor {
+    background-color: #8C9794;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:400px){
+    .contenedor{
+        width: 100%;
+        background-color: #378000
+        
+    }
+
+}
+
+@media screen and (max-width:400px){
+    .contenedor{
+        width: 100%;
+        background-color: #305FF0;
+    }
+
+}
+
+@media screen and (max-width:800px){
+    .contenedor{
+        width: 100%;
+        background-color: #F06730;
+    }
+
+}
+@media screen and (max-width:1600px){
+    .contenedor{
+        width: 100%;
+        background-color: #A2F030;
+    }
+
+}
