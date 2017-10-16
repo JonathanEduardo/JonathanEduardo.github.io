@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    color: #E8FCCF;
+}
+
+#contenedor{
+  /*  color: white;*/
+  background-color: #0D1F2D;
+  margin: 2rem 2rem;
+  height: 100%;
+  
+}
+
+#calculadora{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #BEB7A4;
+    display: inline-block;
+}
+
+div{
+    margin: 1rem;
+}
+
+#pantalla input {
+    width: 20rem;
+}
+
+input{
+    height: 2.5rem;
+    width: 4.375rem;
+    font-size: 1.5625rem;
+}
+
+#div5{
+    font-size: 1.25rem;
+}
+
+@media screen and (max-width:25rem){ /*Usamos rem por que es desde html y em es desde la etiqueta*/
+
+    #pantalla input {
+        width: 15rem;
+    }
+    
+    input{
+        height: 1.875rem;
+        width: 3.28125rem;
+        font-size: 1.171875rem;
+    }
+    
+    #div5{
+        font-size: .9375rem;
+    }   
+
+}
+
+@media screen and (min-width:25rem) and (max-width:50rem){
+
+    #pantalla input {
+        width: 20rem;
+    }
+    
+    input{
+        height: 2.5rem;
+        width: 4.375rem;
+        font-size: 1.5625rem;
+    }
+    
+    #div5{
+        font-size: 1.25rem;
+    }    
+
+}
+
+@media screen and (min-width:50rem) and (max-width:75rem){
+    #pantalla input {
+        width: 25rem;
+    }
+    
+    input{
+        height: 3.125rem;
+        width: 5.4687rem;
+        font-size: 1.9631rem;
+    }
+    
+    #div5{
+        font-size: 1.5625rem;
+    }    
+
+
+}
+@media screen and (min-width: 75rem) and (max-width:120rem){
+    #pantalla input {
+        width: 31.25rem;
+    }
+    
+    input{
+        height: 3.9062rem;
+        width: 6.8358rem;
+        font-size: 2.4538rem;
+    }
+    
+    #div5{
+        font-size: 1.9531rem;
+    }    
+}
