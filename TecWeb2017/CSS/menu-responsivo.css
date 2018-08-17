@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 80%;
+    background: gray;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #1B3357;
+}
+
+/*Tenemos que acceder a los elementos de nav la lista para darles un estilo*/
+nav ul li a{
+    color: white;
+    text-decoration: none; /*quita subrayado a los links*/
+    padding: 1rem 1.25rem; /* 20px / 16px = 1.25rem*/
+    margin: 0.625rem;
+    border-radius: 0.625rem;
+    display: block; /*Esto es para aplicar el padin abajo y arriba y a los lados ya que como era en linea y si quitamos este elemento solo aplica a los lados*/
+}
+
+nav ul li{
+    display: inline-block; /* como la lista es la que se frma en lista los acomodamos con display en bloques*/
+}
+
+nav ul{
+    list-style: none; /*Quitar vinñetas a la lista*/
+}
+
+nav ul li :hover{
+    background-color: white; /*para que detecte cuando se pasa el mause*/
+    color: black;
+}
+
+.logo, nav{
+    display: inline-block; /*Hcaer al logo liea bloque*/
+}
+
+.logo img{
+    max-width: 100%; /* ocupà todo el 100 porciento pero es responvisa osea se ahce chica y grande**/
+}
+
+.logo{
+    max-width: 25%;/* ucupa solo un 25 del div padre*/
+    padding: 0.625rem;
+    vertical-align: middle; /*Acomoda los elementos en medio*/
+}
+
+@media screen and (max-width: 48.75rem){
+.logo{
+    max-width: 100%;
+}
+}
