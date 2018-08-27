@@ -4,6 +4,17 @@
     
             </head>
             <body>
+
+                <!-- 
+                    1. type
+                    2. name
+                    3. http://devdocs.io/html/element/input/text
+                    4.
+                    5.
+                    6.
+                    7.
+                    8.
+                -->
                 <h2>Ejemplos de formularios </h2>
                 
                 <!--<form action="https://www.w3schools.com/action_page.php" method="GET">--> 
@@ -12,12 +23,12 @@
                         <legend>Datos personales</legend>
     
                         <label > <!--asocia la etiqueta con el input-->
-                        Nombre: <input type="text" name="Nombre-usuario" placeholder="Nombre apellidos" required>
+                        Nombre: <input type="text" name="Nombre-usuario" placeholder="Nombre apellidos" title="EL nombre papi" required>
                         <br>
                         </label>
     
                         <label for="idContraseña" >Contrasenia:</label>  <!-- otra forma DE ASOCIARLO SERIA ASI USANDO IDENTIFCADORES-->
-                        <input type="password" name="Password" id="idContraseña" required> <!-- REQUIERED ES PARA OBLIGAR A ESCRIBIR A UN CAMPO-->
+                        <input type="password" name="Password" id="idContraseña" minlength="8" required> <!-- REQUIERED ES PARA OBLIGAR A ESCRIBIR A UN CAMPO-->
                         <br>
     
                         Edad: <input type="number" name="Edad">
@@ -62,6 +73,18 @@
                         oiOS: <input type="radio" name="oiOs" value="2">  
                        
                     </fieldset>
+
+                    <form >
+                        <select name="carrera" id="carrera">
+                            <option value="lolo">lolo</option>
+                            <option value="pepe">pepe</option>
+                        </select>
+                        <input type="submit">
+                    </form>
+
+                    <form>
+                        <TEXTarea rows="25" cols="80" > ESCRIBELE ÉRRO</TEXTarea>
+                    </form>
 
                     <fieldset disabled="disabled">
                         <legend>Preguntas</legend>
