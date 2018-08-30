@@ -1,0 +1,34 @@
+*{
+    font-family: 'Poiret One', cursive;
+    border: 1px solid #FFD25A;
+    background-color: #191919;
+}
+
+h1{
+    color: #FFF05A;
+}
+
+/*selector de tipo
+*aplica el mimso estilo a todos los elementos que tengan esta etiqueta
+*/
+p{
+    text-transform: uppercase;
+}
+
+
+/* SELECTOR DE ID
+ aplica unicamente al elemento con ese id
+*/
+#p2{
+    color: #FF785A;
+    text-justify: auto;
+    
+}
+
+/*SELECTOR DE CLASE
+* aplica unicamente a los elementos con el atributo class
+*/
+.subrayado{
+    text-decoration: underline;
+    color: #FFAA5A;
+}
