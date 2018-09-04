@@ -11,6 +11,24 @@ header{
 main{
     border: 10px solid blueviolet;
     margin-top: 30px;
+    max-width: 600px;/*el max-width se crece a un maximo*/
+    min-width: 100px;
+    height: 400px;
+    /*truco para centrar y calcule el margen*/
+    margin-left:auto;
+    margin-right: auto;
+    /*CENTRADO DE MARGEN ARRIBA Y ABAJO */
+    margin: 20PX auto;
+    /*Borde redondeado*/
+    border-radius: 20px;
+    /**/
+    text-align: center;
+    /*deja el tamano correcto aunte una modificacion*/
+    box-sizing: border-box;
+
+    /*cuuando es muy grande el texto podemos escrollear*/
+    overflow: scroll; 
+    
 }
 
 footer{
