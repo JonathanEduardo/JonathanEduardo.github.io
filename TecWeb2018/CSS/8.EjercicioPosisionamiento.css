@@ -1,0 +1,21 @@
+.columna2{
+    float: left;
+    width: 25%;
+   
+    
+}
+
+.columna1{
+    float: left;
+    width: 30%;
+    text-align: justify;
+
+}
+
+.columna3{
+    float: left;
+    width: 40%;
+    text-align: justify;
+   
+}
+
