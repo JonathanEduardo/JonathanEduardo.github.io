@@ -1,0 +1,54 @@
+html, body{  /*para que ocupe todo el body u documento*/
+    height: 100%;
+}
+.contenedor{
+    height: 100%; /*para que ocupe todo el body u documento*/
+    display: grid;
+    grid-gap: 5px; /*separacion entre los bloques*/
+    grid-template-columns: repeat(8,1fr);  /*  se puede repetir utilizabndo repeat(3,1fr);*/
+    grid-template-rows: 50px auto 50px;
+}
+
+/*a cada div se le indica en que columna inicia y en cual termina*/
+.encabezado{
+    grid-column-start: 1;
+    grid-column-end: -1; /*Termina y ocupa toda la malla*/
+    background-color: blueviolet;
+}
+
+.menu{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: rgb(131, 226, 43);
+}
+
+.contenido{
+    grid-column-start: 2;
+    grid-column-end: -1;
+    background-color: rgb(43, 116, 226);
+}
+
+.pie{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    background-color: rgb(226, 43, 43);
+}
+
+
+/*la sub clase permite legir solo los pares de los elemnetos que estan adrento de la clase  contenedor*/
+/*.contenedor > div:nth-child(even){
+    background-color: blueviolet;
+}*/
+
+/*la sub clase odd permite legir solo los impares de los elemnetos que estan adrento de la clase  contenedor*/
+/*.contenedor > div:nth-child(odd){
+    background-color: rgb(43, 205, 226);
+}*/
+
+
+.contenedor > div{
+    padding:30px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
