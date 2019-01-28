@@ -1,0 +1,178 @@
+function LinksDerecha()
+{
+	cMenu = jQuery("#MenuDerecho .slm-layout-main");
+        if (cMenu.find("ul").size() == 0) //No Tiene Vínculos
+        {
+	        cMenuD = jQuery("#MenuDerecho");
+            cMenuD.removeClass("txt_espacio_derecho");
+
+        }
+        else
+        {
+            cMenuD = jQuery("#MenuDerecho");
+            cMenuD.addClass("txt_espacio_derecho");
+        }
+}
+
+function MenuDerecha() {   
+    cMenu = jQuery("#NavegacionActual .root");
+    cMenu.find("li").each(function () {
+        if ($(this).find("ul").size() != 0)
+        {
+            $(this).addClass("has-sub");
+
+        }
+    });
+
+
+    /****************************
+    /* MUESTRA LINK Y ACORDEON */
+    /****************************/
+
+    var element = $("#NavegacionActual .menu-item.selected").parents("li");
+    element.addClass('open');
+    element.children('ul').slideDown();
+    element.siblings('li').children('ul').slideUp();
+    element.siblings('li').removeClass('open');
+    element.siblings('li').find('li').removeClass('open');
+    element.siblings('li').find('ul').slideUp();
+
+    
+    
+
+
+   /****************************
+    /* SOLO MUESTRA VINCULO 2o y 3er nivel    */
+    /****************************/
+ /*   $('#NavegacionActual li.has-sub>a').on('click', function () {
+    	
+		if ($(this).parent("li").parent("ul").hasClass("root")) //Si su ul padre es root, es primer nivel
+		{
+			$(this).removeAttr('href');			
+			
+			var element = $(this).parent('li');
+	        if (element.hasClass('open')) {
+	            element.removeClass('open');
+	            element.find('li').removeClass('open');
+	            element.find('ul').slideUp();
+	        }
+	        else {
+	            element.addClass('open');
+	            element.children('ul').slideDown();
+	            element.siblings('li').children('ul').slideUp();
+	            element.siblings('li').removeClass('open');
+	            element.siblings('li').find('li').removeClass('open');
+	            element.siblings('li').find('ul').slideUp();
+	        }
+
+		}
+
+    });*/
+
+    $('#NavegacionActual>ul>li.has-sub>a').append('<span class="holder"></span>');
+    
+
+    
+}
+
+
+function MenuIzquierda() {   
+    cMenu = jQuery("#cssmenu .root");
+    cMenu.find("li").each(function () {
+        if ($(this).find("ul").size() != 0)
+        {
+            $(this).addClass("has-sub");
+
+        }
+    });
+
+
+    /****************************
+    /* MUESTRA LINK Y ACORDEON */
+    /****************************/
+
+    var element = $("#cssmenu .menu-item.selected").parents("li");
+    element.addClass('open');
+    element.children('ul').slideDown();
+    element.siblings('li').children('ul').slideUp();
+    element.siblings('li').removeClass('open');
+    element.siblings('li').find('li').removeClass('open');
+    element.siblings('li').find('ul').slideUp();
+
+    
+    
+
+    /****************************
+    /* SOLO MUESTRA VINCULO 2o y 3er nivel    */
+    /****************************/
+    $('#cssmenu li.has-sub>a').on('click', function () {
+    	
+		if ($(this).parent("li").parent("ul").hasClass("root")) //Si su ul padre es root, es primer nivel
+		{
+			$(this).removeAttr('href');			
+			
+			var element = $(this).parent('li');
+	        if (element.hasClass('open')) {
+	            element.removeClass('open');
+	            element.find('li').removeClass('open');
+	            element.find('ul').slideUp();
+	        }
+	        else {
+	            element.addClass('open');
+	            element.children('ul').slideDown();
+	            element.siblings('li').children('ul').slideUp();
+	            element.siblings('li').removeClass('open');
+	            element.siblings('li').find('li').removeClass('open');
+	            element.siblings('li').find('ul').slideUp();
+	        }
+
+		}
+
+    });
+
+    $('#cssmenu>ul>li.has-sub>a').append('<span class="holder"></span>');
+    
+   
+        /****************************
+    /* SOLO MUESTRA VINCULO EN ULTIMO NIVEL    */
+    /****************************/
+  /*  $('#cssmenu li.has-sub>a').on('click', function () {
+
+        $(this).removeAttr('href');
+
+        var element = $(this).parent('li');
+        if (element.hasClass('open')) {
+            element.removeClass('open');
+            element.find('li').removeClass('open');
+            element.find('ul').slideUp();
+        }
+        else {
+            element.addClass('open');
+            element.children('ul').slideDown();
+            element.siblings('li').children('ul').slideUp();
+            element.siblings('li').removeClass('open');
+            element.siblings('li').find('li').removeClass('open');
+            element.siblings('li').find('ul').slideUp();
+        }
+    });
+
+    $('#cssmenu>ul>li.has-sub>a').append('<span class="holder"></span>');
+    */
+
+}
+
+/*
+function MenuDerecha() {
+  if ($('#sideNavBox .menu-item.selected').length) {
+
+        //propagates the selected class, up the three.
+        $('li.static').removeClass('selected');
+        $('#sideNavBox .menu-item.selected').parents('li.static').addClass('selected');
+
+        //collapses top siblings of selected branch
+        $('#sideNavBox .menu-item.selected').parents('li.static').last().siblings()
+         .hide(); //.find('> ul').hide();
+    }
+    else $('#sideNavBox .root.static > li.static > ul').hide();
+};*/
+
