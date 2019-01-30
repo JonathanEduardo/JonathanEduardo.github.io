@@ -1,7 +1,12 @@
+.contenedor{
+    margin-left: 5%;
+    margin-right: 5%;
+}
 .menu{
     height: 50px;
-    width: 1100px;
+    width: 100%;
     background-color: #DADADA;
+    align-content: center;
 }
 
 body{
@@ -13,9 +18,11 @@ body{
      list-style: none; /* oclta vinetas etc*/
      padding: 0px;
      margin: 0px;
+     width:16.66% ;
+     text-align: center;
  }
 
- .menu ul{
+ .menu .menu2 ul{
      margin: 0px;
      padding: 0px;
  }
@@ -33,3 +40,40 @@ body{
      background-color: #666666;
      color:orange;
  }
+
+ .opcion2 a:hover{ /*cuando este sobre el elemento a que esta en la clase opcion*/
+    background-color: rgb(10, 82, 141);
+    color:orange;
+}
+
+ .menu2{
+    height: 100%;
+    width: 16.66%;
+    background-color: #1E72B7;
+    
+ }
+
+ .menu2 ul li{ /*al elemento que tenga menu y que tenga ul y tambien li le aplicamos eso*/
+    list-style: none; /* oclta vinetas etc*/
+    padding: 0px;
+    border-bottom: 2px solid white;
+    
+    
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+.opcion2 a{
+    padding: 15px 30px 15px 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 80%;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block; /* le da un cuadro mas grande*/
+ }
+
+ 
