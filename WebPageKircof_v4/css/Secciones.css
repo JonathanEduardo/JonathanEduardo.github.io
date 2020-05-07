@@ -1,0 +1,14 @@
+/*-----------------Nosotros--------------------*/
+
+#nosotros1 {text-align: center; height: 32.7vh;}
+#nosotros1 .RalewayBold{margin-top: 12.92vh; font-size: calc(1.388vh + .78vw); margin: 8.8vh 8vw 2vh 8vw}
+#nosotros1 .OpenSansReg{margin-top: 2vh; font-size: calc(.70vh + .39vw); margin: 2vh 8vw}
+
+/*nosotros*/
+#nosotros2 {text-align: center; height: 34.4vh;}
+#nosotros2 .RalewayBold{margin-top: 12.92vh; font-size: calc(1.388vh + .78vw); margin: 3.7vh 4vw 2vh 4vw}
+#nosotros2 .OpenSansReg{margin-top: 2vh; font-size: calc(.70vh + .39vw); margin: 2vh 6vw}
+#nosotros2 .row2{margin-top: 9.2vh;}
+#imgLine1{position: relative; top: 5.5vh;width: 15vw}
+#imgLine2{position: relative; top: -8vh;height: 20vh;left: 10vw;}
+#imgLine3{position: relative; top: -8vh;height: 20vh;right: 10vw;}

@@ -1,0 +1,207 @@
+
+/*Tipografia */
+
+body{width: 100vw; overflow-x: hidden;}
+.RalewayReg{font-family: 'Raleway', sans-serif; font-weight: 400;}
+.RalewayBold{font-family: 'Raleway', sans-serif; font-weight: 700;}
+.OpenSansReg{font-family: 'Open Sans', sans-serif; font-weight: 400;}
+.verdanaReg{font-family: 'Verdana';}
+.HelveticaReg{font-family: 'Heebo', sans-serif; font-weight: 400;}
+.container{width: 85%;}
+html { overflow-x:hidden; }
+/*.am{ background-image: linear-gradient(120deg, #FDC000 , #FDC000 ); background-repeat: no-repeat;  background-size: 100% 0.4em; background-position: 0 88%;transition: background-size 0.25s ease-in;}
+.am:hover{  background-size: 100vw 2vh;  background-position: 0 88%;}*/
+.am{ background-image: linear-gradient(120deg, #FDC000 , #FDC000 ); background-repeat: no-repeat;  background-size: 0% 80%; background-position: 0 88%; }
+   /* .am:hover{  background-size: 100% 2vh;  background-position: 100% 88%;}*/
+   @keyframes slide{
+       from{ background-size: 0% 80%;}
+
+       to{ background-size: 100% 80%;}
+       
+   }
+   @keyframes noslide{
+    from{ background-size: 100% 80%;}
+
+    to{ background-size: 0% 80%;}
+    
+}
+
+/*Header*/
+header{height: 5.1em;}
+header .verdanaReg{height:  6em; padding-top: 2.3em; font-size: calc(.55vh + .31vw); text-align: center;}
+header .verdanaReg:hover{background-color: #E21787; color: #ffffff;}
+#logoKircof img{width: 5.21vw; height: auto; margin-top: 1.5vh}
+/*#login{ position: absolute; z-index: 500;font-size: calc(.648vh + .36vw); border-radius: 50px; width: 7.91vw; height: 3em; background-color:white; position: relative; left: 3vw; color: #989898; border: 1px solid #989898;}*/
+#login{ position: absolute; z-index: 500;font-size: calc(.648vh + .36vw);display: block;border-radius: 50px;text-align: center;font-weight: bold;width: 7.91vw; height: 3em; left: 3vw;overflow: hidden;color:#fff;cursor: 
+  pointer;letter-spacing: 1px;box-shadow:inset 0 0 0 1px rgba(0,0,0,0.1);text-decoration: none;transition: all ease 0.5s;background:rgb(48, 50, 61); border: transparent;}
+#login:after,
+#login:before{width:75px;height: 150px;content: '';display: block;background: rgba(48, 50, 61,.9);  transform: rotate(45deg);top: -55px;position: absolute;transition: none;right:-45%;cursor: pointer;}
+#login:before{left: -48%;}
+#login:hover{text-shadow: 0 1px 1px rgba(0,0,0,0.5);background:#ffffff; color: rgb(48, 50, 61); border: 2px solid rgb(48, 50, 61);}
+#login:hover:after,
+#login:hover:before{transform: rotate(45deg), scaleX(130%);background: #30323D;transition: all ease 2s;}
+#login:hover:after{right: 130%;}
+#login:hover:before{left: 130%;}
+#login .glyphicon-user{margin-right: 1vw;margin-left: -1vw;}
+#registro{letter-spacing: 1px;border: 1px solid #E21787;  margin: 1px; font-size: calc(.60vh + .338vw); border-radius: 50px;  width: 7.91vw; height: 3em;background-color: #E21787; position: absolute; left: 6vw; color: #ffffff;
+    box-shadow: inset 0 0 0 0 #ffffff; -webkit-transition: all ease 0.8s; -moz-transition: all ease 0.8s; transition: all ease 0.8s; }
+#registro:hover{ box-shadow: inset -7.91vw 0 0 0 #ffffff; color: #E21787; }
+#registro::before{content: "Registrate";}
+#registro:hover::before{content: "Estas a un paso";   transition: color 0.1s linear 0.1s; color: #E21787;}
+header .botones{height:  6.77vh;  padding-top: 1.7vh;}
+/*movil*/
+#headerMovil{display: none;}
+
+
+/*----------Footer----------*/
+footer{height: 67.6vh; padding-top: 17.7vh;}
+footer .OpenSansReg{font-size: calc(.85vh + .71vw); margin: 2.4vh 0;}
+.menuHeader{margin: 2vh 0;}
+.fa { margin-right: 20px; font-size: 50px !important; width: 70px; height: 70px; padding: 10px; text-align: center; border-radius: 50px; text-decoration: none; box-shadow: inset 0 0 0 0 #ffffff;
+   -webkit-transition: all ease 0.8s; -moz-transition: all ease 0.8s; transition: all ease 2s;  background-color: #ffffff;
+
+ }
+.fa-facebook {background: #ffffff;color: #3B5998;     float: left; border-right: 1px solid transparent;border-left: 1px solid transparent;border-top: 2px solid #428bca;}
+.fa-facebook:hover { opacity: 0.7; box-shadow: inset 1em -1em 0em 1em #3B5998; color: #fff; border: 2px solid #fff; border-right: 0px solid transparent;border-left: 0px solid transparent;border-top: 0px solid #428bca;}
+.fa-linkedin { background: #fff; color: #007bb5;    float: left; border-right: 1px solid transparent; border-left: 1px solid transparent; border-bottom: 2px solid #428bca;}
+.fa-linkedin:hover { opacity: 0.7;  box-shadow: inset 1em -1em 0em 1em #007bb5; color: #fff; border-right: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid #428bca;}
+.fa-youtube {background: #fff;color: #bb0000;  float: left;border-right: 1px solid transparent;border-left: 1px solid transparent;border-top: 2px solid #428bca;}
+.fa-youtube:hover {  opacity: 0.7; box-shadow: inset 1em -1em 0em 1em #bb0000; color: #fff; border-right: 0px solid transparent;border-left: 0px solid transparent;border-top: 0px solid #428bca; }
+.fa-instagram { color:  #e95950;  float: left; border-right: 1px solid transparent; border-left: 1px solid transparent; border-bottom: 2px solid #428bca;}
+.fa-instagram:hover {  opacity: 0.7;box-shadow: inset 1em -1em 0em 1em   #e95950 ; color: #fff; border-right: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid #428bca; }
+
+
+
+
+
+
+
+@media screen and  (min-width: 600px)  and (max-width: 991px) 
+{
+    /*Header*/
+header{height: 6.77vh;}
+header .verdanaReg{height:  6.77vh;; padding-top: 2.5vh; font-size: calc(.55vh + .31vw); text-align: center;}
+header .verdanaReg:hover{background-color: #E21787; color: #ffffff;}
+#logoKircof img{width: 5.21vw; height: 3.8vh; margin-top: 1.5vh}
+#login{font-size: calc(.648vh + .36vw); border-radius: 50px; width: 10.91vw; height: 3.53vh; background-color:white; position: relative; left: 3vw; color: #989898; border: 1px solid #989898;}
+#login .glyphicon-user{margin-right: 1vw;margin-left: -1vw;}
+#registro{border: 1px solid #E21787;  margin: 1px; font-size: calc(.60vh + .338vw); border-radius: 50px;  width: 10.91vw; height: 3.53vh;background-color: #E21787; position: absolute; left: 6vw; color: #ffffff;
+    box-shadow: inset 0 0 0 0 #ffffff; -webkit-transition: all ease 0.8s; -moz-transition: all ease 0.8s; transition: all ease 0.8s; }
+#registro:hover{ box-shadow: inset -7.91vw 0 0 0 #ffffff; color: #E21787; }
+#registro::before{content: "Registrate";}
+#registro:hover::before{content: "Estas a un paso";   transition: color 0.1s linear 0.1s; color: #E21787;}
+header .botones{height:  15.77vh;  padding-top: 1.7vh;}
+/*movil*/
+
+
+/*header*/
+    /*----------Footer----------*/
+footer{height: 25.6vh; padding-top: 17.7vh;}
+footer .OpenSansReg{font-size: calc(.85vh + .91vh); margin: 2.4vh 0;}
+.menuHeader{margin: 2vh 0;}
+}
+
+
+
+@media screen and  (max-width: 767px)
+{
+
+    header{height: 73px;}
+    #headerPrincipal{display: none;}
+    #headerMovil {display: block; background-color: #ffffff;height: 8.99vh;    padding-top: 1vh;}
+       
+    .barraPrincipal .menuMovil{float: right;}
+    #menuResponsivo{display:none}
+    #headerMovil .glyphicon{ color: #989898; border: 1px solid #E0E1E2; padding: 15px; border-radius: 50px;}
+    #headerMovil img{margin: 0px 30vw;}
+    .menuMovil{opacity: .9; position:absolute; top:0vh;; left: 40vw; width: 80vw; height: 100vh; background: #4A4A4A; transition: all 0.5s; transform: translateX(100%);z-index:10000}
+    .menuMovil a{display: block; color:#fff; height: 50px;text-decoration: none; padding: 15px; border-bottom: 1px solid #989898; text-align: center;}
+    .menuMovil a:hover{background: #E21787}
+    #menuResponsivo:checked ~ .menuMovil{transform: translateX(-15%) }
+}
+
+
+/*header*/
+/*------------------MOBIL------------------------*/
+@media screen and  (max-width: 500px) and (max-height: 813px)
+{
+    header{height: 73px;}
+    #headerPrincipal{display: none;}
+    #headerMovil {display: block; background-color: #ffffff;height: 8.99vh;    padding-top: 1vh;}
+       
+    .barraPrincipal .menuMovil{float: right;}
+    #menuResponsivo{display:none}
+    #headerMovil .glyphicon{ color: #989898; border: 1px solid #E0E1E2; padding: 15px; border-radius: 50px;}
+    #headerMovil img{margin: 0px 30vw;}
+    .menuMovil{opacity: .9; position:absolute; top:0vh;; left: 40vw; width: 80vw; height: 100vh; background: #4A4A4A; transition: all 0.5s; transform: translateX(100%);z-index:10000}
+    .menuMovil a{display: block; color:#fff; height: 50px;text-decoration: none; padding: 15px; border-bottom: 1px solid #989898; text-align: center;}
+    .menuMovil a:hover{background: #E21787}
+    #menuResponsivo:checked ~ .menuMovil{transform: translateX(-15%) }
+    
+    
+    
+    
+    
+    
+    /*header*/
+        /*----------Footer----------*/
+        footer{height: 2.6vh; padding-top: 24.7vh;}
+        footer .OpenSansReg{font-size: calc(.65vh + .31vh); margin:.4vh 0;}
+        .menuHeader{margin: 2vh 0;}
+        
+    
+        footer .col1{    width: 50vw;
+            position: relative;
+            top: 12vh;
+            left: -10vw;}
+    
+            footer .col2{    width: 50vw;
+                position: relative;
+                top: 3vh;
+                left: 35vw;}
+    
+ }
+
+
+ @media screen and  (max-width: 800px) and (max-height: 500px)
+{
+    header{height: 73px;}
+    #headerPrincipal{display: none;}
+    #headerMovil {display: block; background-color: #ffffff;height: 8.99vh;    padding-top: 1vh;}
+       
+    .barraPrincipal .menuMovil{float: right;}
+    #menuResponsivo{display:none}
+    #headerMovil .glyphicon{ color: #989898; border: 1px solid #E0E1E2; padding: 15px; border-radius: 50px;}
+    #headerMovil img{margin: 0px 30vw;}
+    .menuMovil{opacity: .9; position:absolute; top:0vh;; left: 40vw; width: 80vw; height: 100vh; background: #4A4A4A; transition: all 0.5s; transform: translateX(100%);z-index:10000}
+    .menuMovil a{display: block; color:#fff; height: 50px;text-decoration: none; padding: 15px; border-bottom: 1px solid #989898; text-align: center;}
+    .menuMovil a:hover{background: #E21787}
+    #menuResponsivo:checked ~ .menuMovil{transform: translateX(-15%) }
+    
+    
+    
+    
+    
+    
+    /*header*/
+        /*----------Footer----------*/
+        footer{height: 2.6vh; padding-top: 1em;}
+        footer .OpenSansReg{font-size: calc(.65vh + .91vh); margin:.4vh 0;}
+        .menuHeader{margin: 2vh 0;}
+        
+    
+        footer .col1{    width: 50vw;
+            position: relative;
+            top: 12vh;
+            left: -10vw;}
+    
+            footer .col2{    width: 50vw;
+                position: relative;
+                top: 3vh;
+                left: 35vw;}
+
+ }
+
+
+
+
